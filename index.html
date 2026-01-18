@@ -47,8 +47,8 @@
       </header>
 
       <section class="board" aria-label="Agenda do dia">
-        <!-- MANHÃ -->
-        <article class="block block--morning">
+        <article class="block block--morning" id="morning">
+          
           <header class="block__head">
             <div class="block__left">
               <span class="dot dot--blue" aria-hidden="true"></span>
@@ -57,20 +57,18 @@
             <span class="block__range">09h-12h</span>
           </header>
 
+
+        <!-- MANHÃ           -->
+
+
           <div class="block__list" id="listMorning">
-            <div class="row">
-              <div class="row__time">09:00</div>
-              <div class="row__main">
-                <div class="row__pet"><strong>Thor</strong> <span>/ Fernanda Costa</span></div>
-              </div>
-              <div class="row__service">Vacinação</div>
-              <button class="row__remove" type="button">Remover agendamento</button>
-            </div>
+
           </div>
+                  
+
         </article>
 
-        <!-- TARDE -->
-        <article class="block block--afternoon">
+        <article class="block block--afternoon" id="afternoon">
           <header class="block__head">
             <div class="block__left">
               <span class="dot dot--amber" aria-hidden="true"></span>
@@ -78,39 +76,17 @@
             </div>
             <span class="block__range">13h-18h</span>
           </header>
+        <!-- TARDE                  -->
 
           <div class="block__list" id="listAfternoon">
-            <div class="row">
-              <div class="row__time">13:00</div>
-              <div class="row__main">
-                <div class="row__pet"><strong>Mel</strong> <span>/ João Souza</span></div>
-              </div>
-              <div class="row__service">Corte de Unhas</div>
-              <button class="row__remove" type="button">Remover agendamento</button>
-            </div>
-
-            <div class="row">
-              <div class="row__time">14:00</div>
-              <div class="row__main">
-                <div class="row__pet"><strong>Bella</strong> <span>/ Pedro Martins</span></div>
-              </div>
-              <div class="row__service">Aplicação de Anti-pulgas</div>
-              <button class="row__remove" type="button">Remover agendamento</button>
-            </div>
-
-            <div class="row">
-              <div class="row__time">15:00</div>
-              <div class="row__main">
-                <div class="row__pet"><strong>Simba</strong> <span>/ Juliana Rocha</span></div>
-              </div>
-              <div class="row__service">Tosa Higiênica</div>
-              <button class="row__remove" type="button">Remover agendamento</button>
-            </div>
+          
           </div>
+
+
         </article>
 
-        <!-- NOITE -->
-        <article class="block block--night">
+        
+        <article class="block block--night" id="night">
           <header class="block__head">
             <div class="block__left">
               <span class="dot dot--yellow" aria-hidden="true"></span>
@@ -118,18 +94,14 @@
             </div>
             <span class="block__range">19h-21h</span>
           </header>
+          <!-- NOITE          -->
+
 
           <div class="block__list" id="listNight">
-            <div class="row">
-              <div class="row__time">20:00</div>
-              <div class="row__main">
-                <div class="row__pet"><strong>Max</strong> <span>/ Camila Santos</span></div>
-              </div>
-              <div class="row__service">Limpeza de Dentes</div>
-              <button class="row__remove" type="button">Remover agendamento</button>
-            </div>
+
           </div>
         </article>
+        
       </section>
 
       <button id="btnNovoAgendamento" class="fab" type="button">
@@ -222,10 +194,6 @@
                 </svg>
               </span>
               <select id="modalTime" required>
-                <option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option>
-                <option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option>
-                <option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option>
-                <option>21:00</option>
               </select>
             </div>
           </label>
