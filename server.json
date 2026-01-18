@@ -1,1 +1,18 @@
-{}
+{
+  "atendimentos": [
+    {
+      "id": 1768757440346,
+      "tutor": "Eduardo",
+      "pet": "Faísca",
+      "service": "Tosa",
+      "when": "2026-01-18T18:00:00.000Z"
+    },
+    {
+      "id": 1768757503438,
+      "tutor": "Eduardo",
+      "pet": "Cereza",
+      "service": "Tosa",
+      "when": "2026-01-18T18:00:00.000Z"
+    }
+  ]
+}
