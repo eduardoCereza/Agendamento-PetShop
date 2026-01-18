@@ -1,3 +1,5 @@
+import dayjs from "dayjs"
+
 const hoursOpen = [
     "9:00",
     "10:00",
@@ -16,8 +18,16 @@ const hoursOpen = [
 
 const modalTime = document.getElementById("modalTime")
 
-for(let i = 0; i < hoursOpen.length; i++){
-    modalTime.innerHTML += `
-                    <option>${hoursOpen[i]}</option>
-        `
+const now = dayjs();
+const currentHour = now.hour()
+
+modalTime.innerHTML = ""
+
+for(const h of hoursOpen){
+
+    const hourNumber = Number(h.split(":")[0]); // "14:00" -> 14
+
+    if(hourNumber >= currentHour){
+        modalTime.innerHTML += `<option value="${h}">${h}</option>`;
+    }
 }
