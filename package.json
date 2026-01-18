@@ -7,6 +7,11 @@
     "build": "webpack",
     "dev": "webpack serve"
   },
+    "dependencies": {
+    "build": "^0.1.4",
+    "dayjs": "^1.11.10",
+    "json-server": "^1.0.0-alpha.21"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.6",
     "@babel/preset-env": "^7.28.6",
