@@ -15,19 +15,6 @@ export async function atendNew({ id, tutor, pet, service, when }) {
   }
 }
 
-export async function atendGet({ date }) {
-  try {
-    const response = await fetch(`${apiConfig.baseURL}/atendimentos`);
-    const data = await response.json();
-
-    // Filtra pelo dia selecionado
-    return data.filter((a) => dayjs(date).isSame(a.when, "day"));
-  } catch (error) {
-    console.log(error);
-    alert("Não foi possível buscar os agendamentos do dia");
-    throw error;
-  }
-}
 
 export async function atendDelete({ id }) {
   try {
